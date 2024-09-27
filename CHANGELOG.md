@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/ubiquity-os/ubiquity-os-kernel/compare/v2.0.0...v2.1.0) (2024-09-27)
+
+
+### Features
+
+* enabling worker observability ([4853aa8](https://github.com/ubiquity-os/ubiquity-os-kernel/commit/4853aa80b824274c3fdfae1f0380ab121ba6e847))
+
 ## [2.0.0](https://github.com/ubiquity/ubiquity-os-kernel/compare/v1.0.0...v2.0.0) (2024-09-25)
 
 
