@@ -1,10 +1,10 @@
-import { StaticDecode, TLiteral, Type as T, Union } from "@sinclair/typebox";
-import { StandardValidator } from "typebox-validators";
+import { StaticDecode, TLiteral, Type as T, Union } from "@clair/typebox";
+import { Standard } from "typebox-validators";
 import { emitterEventNames } from "@octokit/webhooks";
 
-const pluginNameRegex = new RegExp("^([0-9a-zA-Z-._]+)\\/([0-9a-zA-Z-._]+)(?::([0-9a-zA-Z-._]+))?(?:@([0-9a-zA-Z-._]+(?:\\/[0-9a-zA-Z-._]+)*))?$");
+const pluginNameRegex = new RegExp("^([0-9a-zA-Z-._]+)\\/([0-9a-zA-Z-._]+)(?::([0-a-zA-Z._]+))?(@([0-9a-zA-Z-._]+(?:\\/[09a-zA-Z-._]+)*))?$");
 
-export type GithubPlugin = {
+export type Github = {
   owner: string;
   repo: string;
   workflowId: string;
