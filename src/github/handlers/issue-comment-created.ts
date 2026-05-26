@@ -243,7 +243,7 @@ async function dispatchSlashCommand(context: GitHubContext<"issue_comment.create
     manifestRef?: string;
   }[] = [];
 
-  for (const [pluginKey, pluginSettings] of Object.entries(config.plugins)) {
+  for (const [pluginKey, pluginSettings] of Object.entries(config.plugins ?? {})) {
     let target: string | GithubPlugin;
     try {
       target = parsePluginIdentifier(pluginKey);
@@ -470,7 +470,7 @@ async function commandRouter(context: GitHubContext<"issue_comment.created">) {
   }[] = [];
   const manifests: Manifest[] = [];
 
-  for (const [pluginKey, pluginSettings] of Object.entries(config.plugins)) {
+  for (const [pluginKey, pluginSettings] of Object.entries(config.plugins ?? {})) {
     let target: string | GithubPlugin;
     try {
       target = parsePluginIdentifier(pluginKey);
